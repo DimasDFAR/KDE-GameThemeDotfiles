@@ -20,6 +20,11 @@ echo "Copying theme configs..."
 echo "Applying Zsh config..."
 cp ~/dotfiles/HK-Theme/.zshrc ~/.zshrc
 
+# Color schemes
+mkdir -p "$HOME/.local/share/color-schemes"
+cp -r "~/dotfiles/HK-Theme/color-schemes"* "$HOME/.local/share/color-schemes/"
+plasma-apply-colorscheme "ArcDark"
+
 # Fastfetch
 mkdir -p "$HOME/.config/fastfetch"
 cp -r "~/dotfiles/HK-Theme/fastfetch"* "$HOME/.config/fastfetch/"
@@ -32,11 +37,6 @@ cp -r "~/dotfiles/HK-Theme/starship"* "$HOME/.config/starship/"
 mkdir -p "$HOME/.local/share/konsole"
 cp -r "~/dotfiles/HK-Theme/konsole"* "$HOME/.local/share/konsole/"
 cp ~/dotfiles/HK-Theme/konsole ~/.config/konsolerc
-
-# Color schemes
-mkdir -p "$HOME/.local/share/color-schemes"
-cp -r "~/dotfiles/HK-Theme/color-schemes"* "$HOME/.local/share/color-schemes/"
-plasma-apply-colorscheme "ArcDark"
 
 # Plasma panel/layout
 cp "~/dotfiles/HK-Theme/plasma/plasma-org.kde.plasma.desktop-appletsrc" "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc"
