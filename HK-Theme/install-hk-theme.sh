@@ -22,25 +22,23 @@ cp ~/dotfiles/HK-Theme/.zshrc ~/.zshrc
 
 # Fastfetch
 mkdir -p "$HOME/.config/fastfetch"
-cp -r "$THEME_DIR/fastfetch/"* "$HOME/.config/fastfetch/"
+cp -r "~/dotfiles/HK-Theme/fastfetch"* "$HOME/.config/fastfetch/"
 
 # Starship
 mkdir -p "$HOME/.config/starship"
-cp -r "$THEME_DIR/starship/"* "$HOME/.config/starship/"
+cp -r "~/dotfiles/HK-Theme/starship"* "$HOME/.config/starship/"
 
 # Konsole
 mkdir -p "$HOME/.local/share/konsole"
-cp -r "$THEME_DIR/konsole/"* "$HOME/.local/share/konsole/"
-
-
-cp $THEME_DIR/konsolerc ~/.config/konsolerc
+cp -r "~/dotfiles/HK-Theme/konsole"* "$HOME/.local/share/konsole/"
+cp ~/dotfiles/HK-Theme/konsole ~/.config/konsolerc
 
 # Color schemes
 mkdir -p "$HOME/.local/share/color-schemes"
-cp -r "$THEME_DIR/color-schemes/"* "$HOME/.local/share/color-schemes/"
+cp -r "~/dotfiles/HK-Theme/color-schemes"* "$HOME/.local/share/color-schemes/"
 
 # Plasma panel/layout
-cp "$THEME_DIR/plasma/plasma-org.kde.plasma.desktop-appletsrc" "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc"
+cp "~/dotfiles/HK-Theme/plasma/plasma-org.kde.plasma.desktop-appletsrc" "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc"
 
 # Apply wallpaper dynamically via qdbus
 echo "Applying wallpaper dynamically..."
