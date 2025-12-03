@@ -29,6 +29,9 @@ cp -r "$THEME_DIR/starship/"* "$HOME/.config/starship/"
 mkdir -p "$HOME/.local/share/konsole"
 cp -r "$THEME_DIR/konsole/"* "$HOME/.local/share/konsole/"
 
+
+cp $THEME_DIR/konsolerc ~/.config/konsolerc
+
 # Color schemes
 mkdir -p "$HOME/.local/share/color-schemes"
 cp -r "$THEME_DIR/color-schemes/"* "$HOME/.local/share/color-schemes/"
