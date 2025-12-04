@@ -51,8 +51,15 @@ echo "Reloading Plasma to apply changes..."
 kquitapp6 plasmashell || true
 plasmashell &
 
-echo "Waiting for everything to refresh..."
-sleep 5
+echo "Waiting for everything to restart..."
+
+# Wait until /PlasmaShell exists
+for i in {1..15}; do
+    if qdbus6 org.kde.plasmashell >/dev/null 2>&1; then
+        break
+    fi
+    sleep 1
+done
 
 # Apply wallpaper
 echo "Applying wallpaper dynamically..."
