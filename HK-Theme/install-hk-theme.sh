@@ -24,7 +24,7 @@ cp ~/KDE-GameThemeDotfiles/HK-Theme/.zshrc ~/.zshrc
 echo "Applying color schemes..."
 mkdir -p ~/.local/share/color-schemes
 cp -r ~/KDE-GameThemeDotfiles/HK-Theme/color-schemes/ArcDark.colors ~/.local/share/color-schemes/ArcDark.colors
-plasma-apply-colorscheme "Arc Dark"
+plasma-apply-colorscheme "ArcDark"
 
 # Fastfetch
 echo "Applying fastfetch configs..."
