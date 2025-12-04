@@ -49,13 +49,13 @@ cp -r ~/KDE-GameThemeDotfiles/HK-Theme/plasma/plasma-org.kde.plasma.desktop-appl
 
 # Apply wallpaper dynamically via qdbus
 echo "Applying wallpaper dynamically..."
-qdbus6 org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "
+qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "
 var allDesktops = desktops();
-for (i=0; i<allDesktops.length; i++) {
+for (i=0;i<allDesktops.length;i++) {
     d = allDesktops[i];
     d.wallpaperPlugin = 'org.kde.image';
-    d.currentConfigGroup = ['Wallpaper','org.kde.image','General'];
-    d.writeConfig('Image', 'file://~/KDE-​Game​Theme​Dotfiles/HK-Theme/wallpapers/HollowKnight.jpg');
+    d.currentConfigGroup = Array('Wallpaper', 'org.kde.image', 'General');
+    d.writeConfig('Image', 'file://$WALLPAPER');
 }
 "
 
@@ -64,4 +64,4 @@ echo "Reloading Plasma to apply changes..."
 kquitapp6 plasmashell || true
 plasmashell &
 
-echo "Hollow Knight theme applied! (You may need to restart for all changes to apply)"
+echo "Hollow Knight theme applied!"
