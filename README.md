@@ -18,6 +18,40 @@
 
 
 
-## About
+##    About
 
-During my free time
+I made a dotfile for KDE based on games that I like (Hollow Knight, Undertale, and Deltarune, Undertale and Deltarune theme will be released soon)
+
+This was made in Arch Linux and was also tested in Arch-based Distros (like CachyOS)
+You can also use this config but the dependencies are installed via your package manager of choice!
+
+
+##    Dependencies
+
+-  [zsh](https://wiki.archlinux.org/title/Zsh)
+-  zsh plugins: zsh-autosuggestions, zsh-autocomplete, zsh-syntax-highlighting
+-  [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+-  [Starship](https://starship.rs/)
+
+
+##    Installation
+
+**Install the dependencies:**
+
+- ```bash
+  sudo pacman -S starship fastfetch zsh zsh-syntax-highlighting zsh-autocomplete zsh-autosuggestions
+  ```
+
+**Clone the repo:**
+
+- ```bash
+  git clone https://github.com/DimasDFAR/KDE-GameThemeDotfiles.git
+  ```
+
+**Install the theme:**
+If you want to install the Hollow Knight theme, then do this:
+
+- ```bash
+  cd ~/KDE-GameThemeDotfiles/HK-Theme/
+  ./install-hk-theme.sh
+  ```
