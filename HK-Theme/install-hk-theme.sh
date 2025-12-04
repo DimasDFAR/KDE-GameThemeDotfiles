@@ -8,17 +8,17 @@ WALLPAPER="~/KDE-​Game​Theme​Dotfiles/HK-Theme/wallpapers/HollowKnight.jpg
 
 echo "Installing MesloLGL Nerd Fonts system-wide..."
 sudo mkdir -p /usr/share/fonts/truetype/meslo
-sudo cp ~/dotfiles/fonts/MesloLGLNerdFontMono-Bold.ttf /usr/share/fonts/truetype/meslo/
-sudo cp ~/dotfiles/fonts/MesloLGLNerdFontMono-BoldItalic.ttf /usr/share/fonts/truetype/meslo/
-sudo cp ~/dotfiles/fonts/MesloLGLNerdFontMono-Italic.ttf /usr/share/fonts/truetype/meslo/
-sudo cp ~/dotfiles/fonts/MesloLGLNerdFontMono-Regular.ttf /usr/share/fonts/truetype/meslo/
+sudo cp ~/KDE-GameThemeDotfiles/fonts/MesloLGLNerdFontMono-Bold.ttf /usr/share/fonts/truetype/meslo/
+sudo cp ~/KDE-GameThemeDotfiles/fonts/MesloLGLNerdFontMono-BoldItalic.ttf /usr/share/fonts/truetype/meslo/
+sudo cp ~/KDE-GameThemeDotfiles/fonts/MesloLGLNerdFontMono-Italic.ttf /usr/share/fonts/truetype/meslo/
+sudo cp ~/KDE-GameThemeDotfiles/fonts/MesloLGLNerdFontMono-Regular.ttf /usr/share/fonts/truetype/meslo/
 sudo fc-cache -f -v
 
 echo "Copying theme configs..."
 
 # --- Zsh ---
 echo "Applying Zsh configs..."
-cp ~/dotfiles/HK-Theme/.zshrc ~/.zshrc
+cp ~/KDE-GameThemeDotfiles/HK-Theme/.zshrc ~/.zshrc
 
 # Color schemes
 echo "Applying color schemes..."
